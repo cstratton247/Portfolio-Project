@@ -24,4 +24,13 @@ the following form: YYYY.0M.0D.
 
 - Changed design to include a randomized biome map instead of a location based one for simplicity and demonstration purposes.
 
+## 2025.11.07
+
+### Added
+
+- Designed abstract class for BiomeMap component
+
+### Updated
+
+- Changed design to include an abstract class BiomeMapSecondary to further layering.
 ```
