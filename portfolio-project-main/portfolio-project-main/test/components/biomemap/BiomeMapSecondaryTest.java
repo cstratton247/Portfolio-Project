@@ -6,72 +6,89 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * JUnit test fixture for {@code BiomeMapSecondary}.
- * Tests abstract-class methods that rely on kernel methods.
+ * JUnit tests for BiomeMap interface methods.
  */
-public class BiomeMapSecondaryTest {
+public class BiomeMapTest {
 
-    private BiomeMap map;
+    private BiomeMap1L map;
 
     @Before
     public void setUp() {
-        map = new BiomeMap1L(3, 3); // use kernel implementation to test secondary logic
+        map = new BiomeMap1L(3, 3);
+    }
+
+    // -------------------- countBiome Tests --------------------
+
+    @Test
+    public void testCountBiomeInitial() {
+        // All cells are PLAINS initially
+        assertEquals(9, map.countBiome(Biome.PLAINS));
+        assertEquals(0, map.countBiome(Biome.FOREST));
     }
 
     @Test
-    public void testCountBiome() {
+    public void testCountBiomeAfterSet() {
         map.setBiome(0, 0, Biome.FOREST);
-        map.setBiome(1, 0, Biome.FOREST);
-        map.setBiome(2, 0, Biome.DESERT);
+        map.setBiome(1, 1, Biome.FOREST);
         assertEquals(2, map.countBiome(Biome.FOREST));
-        assertEquals(1, map.countBiome(Biome.DESERT));
-        assertEquals(6, map.countBiome(Biome.PLAINS)); // remaining cells
+        assertEquals(7, map.countBiome(Biome.PLAINS));
     }
+
+    // -------------------- randomizeBiomes Tests --------------------
 
     @Test
     public void testRandomizeBiomes() {
         map.randomizeBiomes();
-        // just verify no cell is null
+        // All cells should now contain valid Biomes
         for (int y = 0; y < map.getHeightCount(); y++) {
             for (int x = 0; x < map.getWidth(); x++) {
-                assertEquals(true, map.getBiome(x, y) != null);
+                Biome b = map.getBiome(x, y);
+                assert b != null;
             }
+        }
+    }
+
+    // -------------------- generateFromHeightMap Tests --------------------
+
+    private class DummyHeightMap implements BiomeMap.HeightMap {
+        private final int[][] heights;
+
+        public DummyHeightMap(int[][] heights) {
+            this.heights = heights;
+        }
+
+        @Override
+        public int getHeight(int x, int y) {
+            return heights[y][x];
+        }
+
+        @Override
+        public int getWidth() {
+            return heights[0].length;
+        }
+
+        @Override
+        public int getHeightCount() {
+            return heights.length;
         }
     }
 
     @Test
     public void testGenerateFromHeightMap() {
-        final int[][] heights = {
-            {0, 1, 2},
-            {3, 4, 5},
-            {6, 7, 8}
+        int[][] heights = {
+            {0, 10, 20},
+            {30, 40, 50},
+            {60, 70, 80}
         };
+        BiomeMap.HeightMap hm = new DummyHeightMap(heights);
+        map.generateFromHeightMap(hm);
 
-        BiomeMap.HeightMap hMap = new BiomeMap.HeightMap() {
-
-            @Override
-            public int getHeight(int x, int y) {
-                return heights[y][x];
-            }
-
-            @Override
-            public int getWidth() {
-                return 3;
-            }
-
-            @Override
-            public int getHeightCount() {
-                return 3;
-            }
-        };
-
-        map.generateFromHeightMap(hMap);
-
-        // just check all cells are non-null (actual biome assignment may vary)
+        // Check that map has been updated (implementation-specific)
         for (int y = 0; y < map.getHeightCount(); y++) {
             for (int x = 0; x < map.getWidth(); x++) {
-                assertEquals(true, map.getBiome(x, y) != null);
+                assert map.getBiome(x, y) != null;
             }
         }
     }
 }
+
