@@ -4,15 +4,6 @@ import components.simplewriter.SimpleWriter1L;
 
 /**
  * BiomeMap demonstrates a component that classifies terrain values into biomes.
- * I chose to implement this over HeightMap and TerrainFeaturePlacer since this
- * one is the most important part for the end product, is most likely the
- * hardest to implement, and is about on par with the others for performance
- * requirements. HeightMap is quite basic in that it stores the relative
- * elevation of each biome, but this has no use if there are no biomes, so I
- * chose to focus on this instead. For the TerrainFeaturePlacer, if there is no
- * biome, then the terrain features would make no sense and have no where to be
- * properly placed. So, with both methods being less improtant than this one, I
- * decided to figure this one out first to make sure this project was feasible.
  *
  * @author Christian Stratton
  */
