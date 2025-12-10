@@ -14,9 +14,6 @@ import components.simplewriter.SimpleWriter;
  */
 public abstract class BiomeMapSecondary implements BiomeMap {
 
-    /**
-     * Generates biomes from a height map using elevation thresholds.
-     */
     @Override
     public void generateFromHeightMap(HeightMap h) {
         for (int y = 0; y < this.getHeightCount(); y++) {
@@ -39,9 +36,6 @@ public abstract class BiomeMapSecondary implements BiomeMap {
         }
     }
 
-    /**
-     * Counts how many cells contain a specific biome.
-     */
     @Override
     public int countBiome(Biome b) {
         int count = 0;
@@ -55,9 +49,6 @@ public abstract class BiomeMapSecondary implements BiomeMap {
         return count;
     }
 
-    /**
-     * Fills the biome map with random biomes.
-     */
     @Override
     public void randomizeBiomes() {
         Random1L rand = new Random1L();
@@ -71,9 +62,6 @@ public abstract class BiomeMapSecondary implements BiomeMap {
         }
     }
 
-    /**
-     * Prints the biome map to a SimpleWriter output.
-     */
     @Override
     public void printMap(SimpleWriter out) {
         for (int y = 0; y < this.getHeightCount(); y++) {
@@ -85,9 +73,6 @@ public abstract class BiomeMapSecondary implements BiomeMap {
         }
     }
 
-    /**
-     * Returns a string representation of the map (for debugging or output).
-     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -100,9 +85,6 @@ public abstract class BiomeMapSecondary implements BiomeMap {
         return sb.toString();
     }
 
-    /**
-     * Compares this BiomeMap to another for equality.
-     */
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
@@ -126,9 +108,6 @@ public abstract class BiomeMapSecondary implements BiomeMap {
         return true;
     }
 
-    /**
-     * Generates a hash code based on the biomes.
-     */
     @Override
     public int hashCode() {
         int hash = 7;
