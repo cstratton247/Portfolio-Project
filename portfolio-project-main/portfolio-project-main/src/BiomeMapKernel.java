@@ -1,5 +1,3 @@
-import components.simplewriter.SimpleWriter;
-
 /**
  * Kernel component for {@code BiomeMap}.
  *
