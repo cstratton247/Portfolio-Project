@@ -5,7 +5,7 @@ import components.simplewriter.SimpleWriter1L;
 /**
  * Demonstrates generating a biome map from a height map and printing it.
  */
-public class BiomeMapUseCase1 {
+public class BiomeMapFromHeightPrinted {
 
     public static void main(String[] args) {
         // Create a BiomeMap instance
