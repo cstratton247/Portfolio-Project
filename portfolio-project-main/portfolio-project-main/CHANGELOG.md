@@ -33,6 +33,16 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include an abstract class BiomeMapSecondary to further layering.
+
+## 2025.11.21
+
+### Added
+
+- Designed kernel implementation for BiomeMapSecondary component
+
+### Updated
+
+- Changed design to include a kernel implementation for the BiomeMap project using arrays to simplify the project.
 ## 2025.10.23
 
 ### Added
