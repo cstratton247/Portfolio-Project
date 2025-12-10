@@ -43,4 +43,14 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include a kernel implementation for the BiomeMap project using arrays to simplify the project.
+## 2025.10.23
+
+### Added
+
+- Designed kernel and enhanced interfaces for the BiomeMap component
+
+### Updated
+
+- Changed design to include a design hierarchy to display where this component fits.
+
 ```
