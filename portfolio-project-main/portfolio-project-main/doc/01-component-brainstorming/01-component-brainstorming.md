@@ -2,7 +2,7 @@
 
 - **Name**: Christian Stratton
 - **Dot Number**: stratton.169
-- **Due Date**: 9/19/2025
+- **Due Date**: 9/19 @ 1:50 EST
 ## Assignment Overview
 
 The overall goal of the portfolio project is to have you design and implement
