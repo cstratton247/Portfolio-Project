@@ -2,7 +2,7 @@
 
 - **Name**: Christian Stratton
 - **Dot Number**: stratton.169
-- **Due Date**: 12/10 @ 1:50 EST
+- **Due Date**: 12/10 @ 11:59 EST
 
 ## Assignment Overview
 
