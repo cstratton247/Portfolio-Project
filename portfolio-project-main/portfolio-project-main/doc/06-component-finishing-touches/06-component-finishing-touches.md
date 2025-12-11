@@ -50,8 +50,6 @@ course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -140,8 +138,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +303,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+Software development makes much more sense after working through this project, as it has shown me how you actually go from turning a concept into an actual working piece of software. This has also made me appreciate being in a team much more, as there were many points where I was stuck where I stared at this for hours trying to figure out what to do before it clicked, whereas I imagine a colleague would really speed up that process by spotting issues and avoiding mindblock altogether. The only parts of software development I don't understand as well are the more literal parts, as I have enjoyed making interfaces and commenting, but some of these method I needed to implement really had me struggling. Harder projects may challenge me, but if I work from the abstract on down, then I imagine I could do it.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+This project really brought out my lack of array knowledge, which was absolutely blasted at me on repeat. Almost everything in this was array based, so not being extremely comfortable with arrays was quite the problem to have. I was constantly looking at the api and articles on how arrays actually work in java, which led me to a bunch of niche methods I could use, like split. I am much better at arrays than when I started, so I would say that gapp has been bridged.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+I really enjoyed the more theoretical parts of this, but the nonstop coding quickly wore away at my joy for coding. Coming up with the ideas and interfaces was much more fun than writing 300 lines that barely clicked together the entire time. Most of what I learned from this is that coding is fun and all when you want to do it, but once you make it to a certain point, it becomes an absolute slog of just writing and writing and writing. I enjoy software development less the longer it goes on, which has flipped my perspective from what it used to be of loving solving compllex problems that stumped everyone else.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +322,31 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Before this project, I was entirely unfamiliar with github and components, and those were my two main areas of change other than arrays which I mentioned earlier. Through being forced to learn github, I have learned how to effectively version control a project by seperating it into branches, how to share a repo to others for review, and how to merge branches. Components taught me how to keep everything relevant to one another in an easy place to find, as well has how to make .jar files.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Effective version control via branching
+- Experienced with collaborative work through github
+- Learned branch management to bring a project together.
+- Improved project organization
+- Experience with .jar file creation
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I don't really have any changed feelings about the topic that I chose, as I figured it would be rather painful to create a biome generator, but it is interesting enough, as most open world games have something very similar and I was interested to see if I could replicate something of the sort. After completing this I can assure myself that I can complete what I put my mind to, it just might be more painful than I initially imagined. My career trajectory is the same, but I just don't have too much of a passion for software development.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+With the skills I have picked up, I could definitely move towards a more analytical side of software development, like prediction algorithms or memory storage, as those are quite important to keep organized and are typically related to arrays. To continue this way, I could keep working on projects of this sort by working with the other methods I proposed in the brainstorming section, as those work with these arrays on a different level. As for mentors, I could reach out ot any professors that are at least somewhat familiar with me and give a broad idea of what I am working with and where I am at, which could hopefully result in a guiding hand or if it is advanced enough to the point where it isn't entirely obvious what it does by just reading it, then maybe I've moved in the right direction quite quickly.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -383,8 +381,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -435,7 +431,5 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
