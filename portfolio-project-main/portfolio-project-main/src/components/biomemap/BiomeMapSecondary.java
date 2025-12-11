@@ -1,3 +1,5 @@
+package components.biomemap;
+
 import components.random.Random1L;
 import components.simplewriter.SimpleWriter;
 

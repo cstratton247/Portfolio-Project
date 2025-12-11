@@ -1,3 +1,5 @@
+package components.biomemap;
+
 /**
  * Kernel component for {@code BiomeMap}.
  *
